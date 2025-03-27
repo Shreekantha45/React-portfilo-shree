@@ -1,5 +1,5 @@
 import React from "react";
-import profilePic from "../assets/about.jpg";
+import profilePic from "../assets/Web.webp";
 import { motion } from "framer-motion";
 
 const Details = () => {
