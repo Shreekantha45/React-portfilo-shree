@@ -39,20 +39,18 @@ const Projects = () => {
                   key={index}
                   className="break-words sm:text-base mr-3 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900 transition"
                 >
-
-                  
                   {tech}
                 </span>
               ))}
 
               <div className="mt-4 flex gap-2">
                 <a href={project.livelink} target="blank" rel="noopener noreffer">
-                  <button className="px-4 py-2 bg-black-500 text-white rounded hover:bg-purple-600 transition">
+                  <button className="px-4 py-2 bg-black-500 text-white rounded-xl hover:bg-purple-900 transition">
                     Live Demo
                   </button>
                 </a>
                 <a href={project.repolink} target="blank" rel="noopener noreffer">
-                  <button className="px-4 py-2 bg-black-500 text-white rounded hover:bg-purple-600 transition">
+                  <button className="px-4 py-2 bg-black-500 text-white rounded-xl hover:bg-purple-600 transition">
                     GitHub Repo
                   </button>
                 </a>
