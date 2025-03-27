@@ -1,5 +1,5 @@
 import React from "react";
-import profileP from "../assets/Hero.webp";
+import profileP from "../assets/Pic.png";
 import { delay, motion } from "framer-motion";
 
 const container = (delay) => ({
@@ -51,13 +51,13 @@ const Hero = () => {
             </motion.p>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 lg:p-2 mt-40">
+        <div className="w-full lg:w-1/2 lg:p-2 ">
           <div className="flex justify-center">
             <motion.img
             initial={{x: 100, opacity: 0}}
             animate={{x: 0, opacity: 1}}
             transition={{duration: 1, delay: 1.2}}
-           className="rounded-2xl h-150" src={profileP} alt="Shree" />
+           className="rounded-s-full h-150" src={profileP} alt="Shree" />
           </div>
         </div>
       </div>
