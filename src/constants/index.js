@@ -72,9 +72,7 @@ export const PROJECTS = [
     description:
       "My personal portfolio website built using React.js and Tailwind CSS. The website showcases my projects, skills, and experience in an interactive and visually appealing manner. The project helped me improve my React skills, including component composition, routing, and state management. It also allowed me to practice responsive design and accessibility best practices.", 
 
-    technologies: ["HTML", "JavaScript", "React.js", "Express",
-      "Tailwind","Node.js", "NOSQL", "MongoDB"],
-
+    technologies: ["HTML", "JavaScript", "React.js", "Tailwind CSS"],
     livelink: "https://react-portfilo-shree.vercel.app/",
     repolink: "https://github.com/Shreekantha45/React-portfilo-shree",
   },

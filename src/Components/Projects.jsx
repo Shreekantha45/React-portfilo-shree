@@ -39,6 +39,8 @@ const Projects = () => {
                   key={index}
                   className="break-words sm:text-base mr-3 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900 transition"
                 >
+
+                  
                   {tech}
                 </span>
               ))}
