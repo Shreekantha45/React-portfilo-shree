@@ -1,14 +1,14 @@
 import React from "react";
-import profileP from "../assets/Pic.png";
-import { delay, motion } from "framer-motion";
+import profileP from "../assets/Hero1.avif";
+import { motion } from "framer-motion";
 
 const container = (delay) => ({
   hidden: {x: -100, opacity: 0},
   visible: {
     x: 0,
     opacity: 1,
-    transition: {
-      delay: delay,
+    transition: { duration: 1,
+      delay: delay
     },
   },
 });
@@ -51,13 +51,13 @@ const Hero = () => {
             </motion.p>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 lg:p-2 ">
+        <div className="w-full lg:w-1/2 lg:p-8 ">
           <div className="flex justify-center">
             <motion.img
             initial={{x: 100, opacity: 0}}
             animate={{x: 0, opacity: 1}}
             transition={{duration: 1, delay: 1.2}}
-           className="rounded-s-full h-150" src={profileP} alt="Shree" />
+           className="rounded-s-full h-100" src={profileP} alt="Shree" />
           </div>
         </div>
       </div>

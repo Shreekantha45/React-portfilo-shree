@@ -32,7 +32,8 @@ const Projects = () => {
               transition={{ duration: 1.5}}
              className="w-full max-w-xl lg:w-1/2 lg:px-8">
               <h6 className="mb-6 font-semibold">{project.title}</h6>
-              <p className="mb-4 text-neutral-400">{project.description}</p>
+              <p className="mb-4 text-neutral-400">{project.description}
+              </p>
               {project.technologies.map((tech, index) => (
                 <span
                   key={index}
@@ -41,6 +42,21 @@ const Projects = () => {
                   {tech}
                 </span>
               ))}
+
+              <div className="mt-4 flex gap-2">
+                <a href={project.livelink} target="blank" rel="noopener noreffer">
+                  <button className="px-4 py-2 bg-black-500 text-white rounded hover:bg-purple-600 transition">
+                    Live Demo
+                  </button>
+                </a>
+                <a href={project.repolink} target="blank" rel="noopener noreffer">
+                  <button className="px-4 py-2 bg-black-500 text-white rounded hover:bg-purple-600 transition">
+                    GitHub Repo
+                  </button>
+                </a>
+
+              </div>
+              
             </motion.div>
           </div>
         ))}
