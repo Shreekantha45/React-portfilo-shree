@@ -20,8 +20,8 @@ const Contact = () => {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 2}}
-         className='my-4'> {CONTACT.phoneNo}</motion.p>
-        <a href={CONTACT.email} className='border-b '>kshreekanth45@gmail.com</a>
+         className='my-4 hover:text-white cursor-pointer'> {CONTACT.phoneNo}</motion.p>
+        <a href={CONTACT.email} className='border-b hover:text-2xl hover:text-white'>kshreekanth45@gmail.com</a>
       </div>
     </div>
   )

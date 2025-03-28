@@ -13,7 +13,7 @@ const Navbar = () => {
       </div>
       <div className="m-8 flex items-center justify-center gap-4 text-2xl ">
         <div>
-          <a href="https://www.linkedin.com/in/shreekantha-k-106088253" target="blank" rel="noopener noreferrer" className="hover:text-white transition duration-300">
+          <a href="https://www.linkedin.com/in/shreekantha-k-106088253" target="blank" rel="noopener noreferrer" className="hover:text-blue-700 transition duration-300">
           <FaLinkedin /> 
           </a>
           </div>
@@ -23,7 +23,7 @@ const Navbar = () => {
           </a>
           </div>
           <div>
-          <a href="#" target="blank" rel="noopener noreferrer" className="hover:text-white transition duration-300">
+          <a href="#" target="blank" rel="noopener noreferrer" className="hover:text-red-600 transition duration-300">
           <FaInstagram /> 
           </a>
           </div>
