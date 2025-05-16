@@ -2,9 +2,9 @@ import React from "react";
 import { RiReactjsLine, RiTailwindCssFill } from "react-icons/ri";
 import { SiExpress, SiMongodb } from "react-icons/si";
 import { FaGithub, FaNodeJs } from "react-icons/fa";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
-const iconVraiants = (duration) => ({
+const iconVariants = (duration) => ({
   initial: { y: -10 },
   animate: {
     y: [10, -10],
@@ -19,59 +19,74 @@ const iconVraiants = (duration) => ({
 
 const Technologies = () => {
   return (
-    <div className="border-b border-neutral-800 pb-24">
+    <div className="border-b border-neutral-800 dark:border-neutral-600 pb-24">
       <motion.h1
-      whileInView={{ opacity: 1, y: 0}}
-      initial={{ opacity: 0, y: -100}}
-      transition={{ duration: 1.5}}
-       className="my-20 text-center text-4xl">Technologies</motion.h1>
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 1.5 }}
+        className="my-20 text-center text-4xl font-semibold"
+      >
+        Technologies
+      </motion.h1>
       <motion.div
-      whileInView={{ opacity: 1, x: 0}}
-      initial={{ opacity: 0, x: -100}}
-      transition={{ duration: 1.5}}
-       className="flex flex-wrap items-center justify-center gap-4">
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: -100 }}
+        transition={{ duration: 1.5 }}
+        className="flex flex-wrap items-center justify-center gap-6 px-4"
+      >
         <motion.div
-          variants={iconVraiants(2)}
+          variants={iconVariants(2)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          aria-label="MongoDB"
+          className="rounded-2xl border-4 border-neutral-800 dark:border-neutral-600 p-5 cursor-pointer hover:scale-110 hover:shadow-lg transition-transform"
         >
-          <SiMongodb className="text-7xl text-green-500 " />
+          <SiMongodb className="text-7xl text-green-500" />
         </motion.div>
-        < motion.div
-        variants={iconVraiants(4)}
-        initial="initial"
-        animate="animate"
-         className="rounded-2xl border-4 border-neutral-800 p-4">
+        <motion.div
+          variants={iconVariants(4)}
+          initial="initial"
+          animate="animate"
+          aria-label="Express.js"
+          className="rounded-2xl border-4 border-neutral-800 dark:border-neutral-600 p-5 cursor-pointer hover:scale-110 hover:shadow-lg transition-transform"
+        >
           <SiExpress className="text-7xl text-green-500" />
         </motion.div>
-        <motion.div 
-        variants={iconVraiants(6)}
-        initial="initial"
-        animate="animate"
-        className="rounded-2xl border-4 border-neutral-800 p-4">
+        <motion.div
+          variants={iconVariants(6)}
+          initial="initial"
+          animate="animate"
+          aria-label="React.js"
+          className="rounded-2xl border-4 border-neutral-800 dark:border-neutral-600 p-5 cursor-pointer hover:scale-110 hover:shadow-lg transition-transform"
+        >
           <RiReactjsLine className="text-7xl text-cyan-400" />
         </motion.div>
         <motion.div
-        variants={iconVraiants(5)}
-        initial="initial"
-        animate="animate"
-         className="rounded-2xl border-4 border-neutral-800 p-4">
+          variants={iconVariants(5)}
+          initial="initial"
+          animate="animate"
+          aria-label="Node.js"
+          className="rounded-2xl border-4 border-neutral-800 dark:border-neutral-600 p-5 cursor-pointer hover:scale-110 hover:shadow-lg transition-transform"
+        >
           <FaNodeJs className="text-7xl text-green-700" />
         </motion.div>
-        <motion.div 
-        variants={iconVraiants(3)}
-        initial="initial"
-        animate="animate"
-        className="rounded-2xl border-4 border-neutral-800 p-4">
-          <RiTailwindCssFill className="text-7xl text-cyan-400 " />
+        <motion.div
+          variants={iconVariants(3)}
+          initial="initial"
+          animate="animate"
+          aria-label="Tailwind CSS"
+          className="rounded-2xl border-4 border-neutral-800 dark:border-neutral-600 p-5 cursor-pointer hover:scale-110 hover:shadow-lg transition-transform"
+        >
+          <RiTailwindCssFill className="text-7xl text-cyan-400" />
         </motion.div>
         <motion.div
-        variants={iconVraiants(5)}
-        initial="initial"
-        animate="animate"
-         className="rounded-2xl border-4 border-neutral-800 p-4">
-          <FaGithub className="text-7xl  bg-black text-white" />
+          variants={iconVariants(5)}
+          initial="initial"
+          animate="animate"
+          aria-label="GitHub"
+          className="rounded-2xl border-4 border-neutral-800 dark:border-neutral-600 p-5 cursor-pointer hover:scale-110 hover:shadow-lg transition-transform bg-black text-white"
+        >
+          <FaGithub className="text-7xl" />
         </motion.div>
       </motion.div>
     </div>
