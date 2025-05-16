@@ -1,42 +1,3 @@
-// import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-
-// const Footer = () => {
-//   return (
-//     <footer className="text-center p-4 bg-gray-100 dark:bg-gray-800 dark:text-white shadow-inner mt-auto">
-//       <p className="mb-2 text-sm">&copy; {new Date().getFullYear()} Sreekantha. All rights reserved.</p>
-//       <br />
-//       <div className="flex justify-center space-x-6 text-xl">
-//         <a
-//           href="https://github.com/Shreekantha45"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//           className="hover:text-blue-600 transition-colors duration-300"
-//         >
-//           <FaGithub />
-//         </a>
-//         <a
-//           href="https://linkedin.com/in/shreekantha-k-106088253"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//           className="hover:text-blue-600 transition-colors duration-300"
-//         >
-//           <FaLinkedin />
-//         </a>
-//         <a
-//           href="mailto:kshreekantha45@gmail.com"
-//           className="hover:text-blue-600 transition-colors duration-300"
-//         >
-//           <FaEnvelope />
-//         </a>
-//       </div>
-//     </footer>
-//   );
-// };
-
-// export default Footer;
-
-// components/Footer.jsx
-
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png"; // Adjust the path if needed
@@ -49,7 +10,7 @@ const Footer = () => {
         {/* Left: Logo */}
         <div className="flex items-center space-x-3">
           <Link to="/hero">
-          <img src={logo} alt="Logo" className="w-30 h-20 object-contain" />
+          <img src={logo} alt="Logo" className="w-32 h-28 object-contain" />
           </Link>
         </div>
 

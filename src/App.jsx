@@ -18,14 +18,13 @@ const App = () => {
       <div className="container mx-auto px-8">
         <Routes>
           <Route path="/" element={<Layout/>} >
-            <Route path="/hero" element={<Hero />} />
+            <Route index element={<Hero />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/tech" element={<Technologies />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/resume" element={<Resume />} />
           </Route>
-          <Route path="/footer" element={<Footer/>}/>
         </Routes>
       </div>
     </div>
