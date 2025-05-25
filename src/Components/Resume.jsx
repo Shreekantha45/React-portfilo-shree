@@ -3,11 +3,12 @@ import resumeImage from "../assets/Shree_Resume.jpg"; // update path if needed
 
 const Resume = () => {
   return (
-    <div className="min-h-screen py-12 px-4 md:px-16  text-black  dark:text-white">
+    <div className="min-h-screen py-1 px-1 md:px-16  text-black  dark:text-white">
       <h1 className="text-4xl font-bold mb-6 text-center">My Resume</h1>
 
       <p className="mb-4 text-center max-w-2xl mx-auto">
-        I am a passionate Full Stack Developer with a knack for crafting robust and scalable web applications.
+        I am a passionate Full Stack Developer with a knack for crafting robust
+        and scalable web applications.
       </p>
 
       <div className="flex justify-center mb-6">

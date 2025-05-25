@@ -1,11 +1,11 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { CONTACT } from '../constants';
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import React from "react";
+import { motion } from "framer-motion";
+import { CONTACT } from "../constants";
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="border-b border-neutral-800 px-4 py-20  text-white">
+    <div className="border-b border-neutral-800 px-1 py-1  text-white">
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -50 }}
@@ -32,7 +32,9 @@ const Contact = () => {
           {/* Phone */}
           <div className="flex items-start gap-4">
             <FaPhoneAlt className="text-2xl text-purple-400 mt-1" />
-            <p className="hover:text-purple-300 cursor-pointer transition">{CONTACT.phoneNo}</p>
+            <p className="hover:text-purple-300 cursor-pointer transition">
+              {CONTACT.phoneNo}
+            </p>
           </div>
 
           {/* Email */}
@@ -56,8 +58,8 @@ const Contact = () => {
         >
           <h3 className="text-2xl font-semibold mb-4">Let's Connect</h3>
           <p className="text-neutral-400 mb-4">
-            Feel free to reach out via email or phone. I'm open to collaboration,
-            freelance, or full-time opportunities.
+            Feel free to reach out via email or phone. I'm open to
+            collaboration, freelance, or full-time opportunities.
           </p>
           <a
             href={`mailto:${CONTACT.email}`}
@@ -72,4 +74,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

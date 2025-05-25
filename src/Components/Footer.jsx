@@ -6,14 +6,12 @@ const Footer = () => {
   return (
     <footer className="w-full dark:text-white shadow-inner mt-auto py-6 px-6">
       <div className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto gap-6">
-        
         {/* Left: Logo */}
         <div className="flex items-center space-x-3">
-          <Link to="/hero">
-          <img src={logo} alt="Logo" className="w-32 h-28 object-contain" />
+          <Link to="/" className="flex items-center">
+            <img src={logo} alt="Logo" className="w-32 h-28 object-contain" />
           </Link>
         </div>
-
         {/* Center: Info and Icons */}
         <div className="text-center">
           <p className="text-sm mb-2">
@@ -45,9 +43,9 @@ const Footer = () => {
             </a>
           </div>
         </div>
-
         {/* Right: Empty or Optional Section */}
-        <div className="hidden md:block w-14" /> {/* spacer for layout balance */}
+        <div className="hidden md:block w-14" />{" "}
+        {/* spacer for layout balance */}
       </div>
     </footer>
   );

@@ -5,9 +5,9 @@ import Technologies from "./Components/Technologies";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import { Route, Routes } from "react-router-dom";
-import  Layout  from "./Layout";
+import Layout from "./Layout";
 import Resume from "./Components/Resume";
-import Footer from "./Components/Footer";
+
 const App = () => {
   return (
     <div className="overflow-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900">
@@ -17,13 +17,13 @@ const App = () => {
 
       <div className="container mx-auto px-8">
         <Routes>
-          <Route path="/" element={<Layout/>} >
-            <Route index element={<Hero />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/tech" element={<Technologies />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/resume" element={<Resume />} />
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Hero/>} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/tech" element={<Technologies />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/resume" element={<Resume />} />
           </Route>
         </Routes>
       </div>

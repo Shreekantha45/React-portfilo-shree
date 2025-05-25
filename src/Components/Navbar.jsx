@@ -3,10 +3,8 @@ import logo from "../assets/logo.png";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 
-const Navbar = () => { 
-
+const Navbar = () => {
   const links = [
-    // { name: "Hero", path: "/hero" },
     { name: "Projects", path: "/projects" },
     { name: "Technologies", path: "/tech" },
     { name: "About", path: "/about" },
@@ -19,14 +17,14 @@ const Navbar = () => {
     <nav className="flex flex-col md:flex-row justify-between items-center px-6 py-4 shadow dark:text-white">
       {/* Logo */}
       <div className="flex items-center mb-4 md:mb-0">
-        <Link to="/hero">
+        <Link to="/">
           <img src={logo} alt="LOGO" className="w-32 h-auto" />
         </Link>
       </div>
 
       {/* Navigation Links */}
       <div className="flex items-center space-x-6 mb-4 md:mb-0">
-        {links.map(link => (
+        {links.map((link) => (
           <NavLink
             key={link.name}
             to={link.path}
@@ -39,7 +37,6 @@ const Navbar = () => {
             {link.name}
           </NavLink>
         ))}
-        
       </div>
 
       {/* Social Media Icons */}

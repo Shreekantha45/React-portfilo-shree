@@ -1,8 +1,15 @@
-import { image } from "framer-motion/client";
-import project1 from "../assets/projects/Project1.png";
-import project2 from "../assets/projects/Project2.png";
-import project3 from "../assets/projects/Project3.png";
-import project4 from "../assets/projects/Project4.png";
+import project3 from "/public/projects/Project3.png";
+import Hero from "/public/projects/Hero.png";
+import About from "/public/projects/About.png";
+import Contact from "/public/projects/Contact.png";
+import Create from "/public/projects/Create.page.png";
+import Home from "/public/projects/Home.page.png";
+import Resume from "/public/projects/Resume.png";
+import Tech from "/public/projects/Tech.png";
+import Update from "/public/projects/Update.page.png";
+import Project from "/public/projects/Project.png";
+
+
 
 
 export const EXPERIENCES = [
@@ -38,36 +45,8 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Amazon Clone",
-    image: project1,
-    image: project2,
-    description:
-      "Amazon Clone built using pure HTML & CSS!  This project helped me improve my front-end skills by focusing on Responsive Design – Optimized for different screen sizes Flexbox & Grid – Structured layout for a seamless shopping experience CSS Styling – Clean and modern UI with attention to detail.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    livelink: "https://amazon-clone-tau-snowy.vercel.app/",
-    repolink: "https://github.com/Shreekantha45/Amazon_Clone",
-  },
-  {
-    title: "Rock-Paper-Scissors Game",
-    image: project2,
-    description:
-      "This is a classic Rock-Paper-Scissors game built using HTML, CSS, and JavaScript. The game allows users to play against a computer opponent that randomly selects Rock, Paper, or Scissors. The player's choice is compared with the computer’s choice, and the result is displayed instantly. The game also keeps track of the score, making it fun and engaging This project helped me improve my DOM manipulation, event handling, and logic-building skills in JavaScript.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    livelink: "https://mini-project-scissors-game.vercel.app/",
-    repolink: "https://github.com/Shreekantha45/MiniProject---Scissors-Game",
-  },
-  {
-    title: "TIC-TAC-TOE Game",
-    image: project3,
-    description:
-      "A simple Tic-Tac-Toe game built using React.js. The game allows two players to take turns marking the board with 'X' and 'O'. The game logic checks for a winning combination after each move and declares the winner. The project helped me enhance my React skills, including state management, component lifecycle methods, and conditional rendering.",
-    technologies: ["HTML", "CSS", "React", "JavaScript"],
-    livelink: "https://tic-tac-toe-ivory-iota.vercel.app/",
-    repolink: "https://github.com/Shreekantha45/Tic-Tac-Toe",
-  },
-  {
     title: "Portfolio Website",
-    image: project4,
+    images: [Hero, About, Contact, Tech, Resume, Project],
     description:
       "My personal portfolio website built using React.js and Tailwind CSS. The website showcases my projects, skills, and experience in an interactive and visually appealing manner. The project helped me improve my React skills, including component composition, routing, and state management. It also allowed me to practice responsive design and accessibility best practices.", 
 
