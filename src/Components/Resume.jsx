@@ -4,7 +4,7 @@ import { Award } from "lucide-react"; // Optional icon if using lucide-react
 
 const Resume = () => {
   return (
-    <div className="min-h-screen py-1 px-1 md:px-16 text-black dark:text-white">
+    <div className="min-h-screen py-1 px-1 md:px-16 text-white bg-gray-100 dark:bg-gray-900">
       <h1 className="text-4xl font-bold mb-6 text-center">My Resume</h1>
 
       <p className="mb-4 text-center max-w-2xl mx-auto">
