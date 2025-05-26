@@ -8,6 +8,7 @@ import Resume from "/public/projects/Resume.png";
 import Tech from "/public/projects/Tech.png";
 import Update from "/public/projects/Update.page.png";
 import Project from "/public/projects/Project.png";
+import { create } from "framer-motion/client";
 
 
 
@@ -53,6 +54,16 @@ export const PROJECTS = [
     technologies: ["HTML", "JavaScript", "React", "Tailwind"],
     livelink: "https://react-portfilo-shree.vercel.app/",
     repolink: "https://github.com/Shreekantha45/React-portfilo-shree",
+  },
+  {
+    title: "MERN-Stack E-commerce Product Management Platform",
+    images: [Create, Home, Update],
+    description:
+      "Developed a full-stack web application for product management using the MERN stack (MongoDB, Express.js, React.js, Node.js). Implemented complete CRUD (Create, Read, Update, Delete) functionality for products, featuring a responsive user interface built with Tailwind CSS and seamless navigation using React Router DOM. The application allows users to create, view, update, and delete products, with data stored in a MongoDB database. The project showcases my skills in full-stack development, including API integration, state management with React hooks, and responsive design principles.", 
+
+    technologies: ["JavaScript", "React", "Tailwind", "Node.js", "Express.js", "MongoDB"],
+    livelink: "https://product-store-frontend-h5hh.onrender.com",
+    repolink: "https://github.com/Shreekantha45/Product-Store",
   },
 ];
 

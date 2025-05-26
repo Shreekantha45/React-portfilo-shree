@@ -5,6 +5,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Navbar = () => {
   const links = [
+    { name: "Home", path: "/" },
     { name: "Projects", path: "/projects" },
     { name: "Technologies", path: "/tech" },
     { name: "About", path: "/about" },
