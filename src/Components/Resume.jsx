@@ -1,5 +1,5 @@
 import React from "react";
-import resumeImage from "../assets/Shree_Resume.jpg"; // update path if needed
+import resumeImage from "../assets/Shreekantha_MERN.jpg"; // update path if needed
 import { Award } from "lucide-react"; // Optional icon if using lucide-react
 
 const Resume = () => {
