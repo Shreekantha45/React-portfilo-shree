@@ -70,5 +70,5 @@ export const PROJECTS = [
 export const CONTACT = {
   address: "Nagawara, Bangalore, Karnataka, India",
   phoneNo: "+91    8496945667 ",
-  email: "Mailto:kshreekanth45@gmail.com",
+  email: "kshreekanth45@gmail.com",
 };
