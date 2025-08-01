@@ -1,5 +1,5 @@
 import React from "react";
-import resumeImage from "../assets/Shreekantha_MERN.jpg"; // update path if needed
+import resumeImage from "../assets/Shreekantha_Resume.jpg"; // update path if needed
 import { Award } from "lucide-react"; // Optional icon if using lucide-react
 
 const Resume = () => {
@@ -14,7 +14,7 @@ const Resume = () => {
 
       <div className="flex justify-center mb-6">
         <a
-          href="/resume.pdf"
+          href="/Shreekantha_Resume.pdf"
           target="_blank"
           download="Shree_Resume"
           className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded shadow transition duration-300"
@@ -59,6 +59,27 @@ const Resume = () => {
               </p>
               <a
                 href="/eCertificate.pdf"
+                target="_blank"
+                className="inline-block mt-2 text-blue-600 dark:text-blue-400 underline hover:text-blue-800"
+              >
+                📄 View Certificate (PDF)
+              </a>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div className="bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-xl p-6 shadow-md">
+          <div className="flex items-start gap-4">
+            {/* Optional Oracle Logo */}
+            <div>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                MERN Stack programming
+              </h3>
+              <p className="text-sm text-gray-600 dark:text-gray-300">
+                Issued by Oracle – <span className="italic">March, 2024</span><br />
+              </p>
+              <a
+                href="/MERN Stack.pdf"
                 target="_blank"
                 className="inline-block mt-2 text-blue-600 dark:text-blue-400 underline hover:text-blue-800"
               >

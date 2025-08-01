@@ -4,7 +4,7 @@ import About from "/public/projects/About.png";
 import Contact from "/public/projects/Contact.png";
 import Create from "/public/projects/Create.page.png";
 import Home from "/public/projects/Home.page.png";
-import Resume from "/public/projects/Resume.png";
+// import Resume from "/public/projects/Resume.png";
 import Tech from "/public/projects/Tech.png";
 import Update from "/public/projects/Update.page.png";
 import Project from "/public/projects/Project.png";
@@ -47,7 +47,7 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "Portfolio Website",
-    images: [Hero, About, Contact, Tech, Resume, Project],
+    images: [Hero, About, Contact, Tech, Project],
     description:
       "My personal portfolio website built using React.js and Tailwind CSS. The website showcases my projects, skills, and experience in an interactive and visually appealing manner. The project helped me improve my React skills, including component composition, routing, and state management. It also allowed me to practice responsive design and accessibility best practices.", 
 
@@ -69,6 +69,6 @@ export const PROJECTS = [
 
 export const CONTACT = {
   address: "Nagawara, Bangalore, Karnataka, India",
-  phoneNo: "+91    8496945667 ",
-  email: "kshreekanth45@gmail.com",
+  phoneNo: "+91    9902881845 ",
+  email: "kshreekanth2000@gmail.com",
 };
