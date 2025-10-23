@@ -1,5 +1,5 @@
 import React from "react";
-import resumeImage from "../assets/Shreekantha_Resume.jpg"; // update path if needed
+import resumeImage from "../assets/Shreekanth_Resume.jpg"; // update path if needed
 import { Award } from "lucide-react"; // Optional icon if using lucide-react
 
 const Resume = () => {
@@ -14,7 +14,7 @@ const Resume = () => {
 
       <div className="flex justify-center mb-6">
         <a
-          href="/Shreekantha_Resume.pdf"
+          href="/Shreekantha_FullStackDeveloper.pdf"
           target="_blank"
           download="Shree_Resume"
           className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded shadow transition duration-300"
